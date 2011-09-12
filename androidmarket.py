@@ -159,6 +159,27 @@ class MarketSession(object):
                 for app in rg.appsResponse.app:
                     retlist.append(self._toDict(app))
         return retlist
+    
+    '''
+    Gets all newest apps by default.
+    @author Malinowski
+    '''
+    def getApps(self, startIndex = 0, entriesCount = 10, extendedInfo = True, orderType = market_proto.AppsRequest.NEWEST, category = None):
+        
+        appsreq = market_proto.AppsRequest()
+        appsreq.orderType = orderType
+        appsreq.startIndex = startIndex
+        appsreq.entriesCount = entriesCount
+        appsreq.withExtendedInfo = extendedInfo
+        
+        if category not None:
+            appsreq.categoryId = category
+
+        request = market_proto.Request()
+        request.requestgroup.add(appsRequest = appsreq)
+        
+        response = self.execute(request)
+        print response
 
     def getComments(self, appid, startIndex = 0, entriesCount = 10):
         req = market_proto.CommentsRequest()
