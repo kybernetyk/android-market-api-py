@@ -11,7 +11,7 @@ This is a Python port of the [Android Market API Java Project](http://code.googl
 Linux:
 
 1. aptitude install libprotobuf-dev
-2. wget protobuf-2.4.1.tar.bz2 http://protobuf.googlecode.com/files/protobuf-2.4.1.tar.bz2 && tar -jxf protobuf-2.4.1.tar.bz2
+2. wget http://protobuf.googlecode.com/files/protobuf-2.4.1.tar.bz2 && tar -jxf protobuf-2.4.1.tar.bz2
 1. cd protobuf-2.4.1/python/
 4. sudo python setup.py build
 5. If no errors in step 4: sudo python setup.py install
