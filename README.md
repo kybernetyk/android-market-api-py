@@ -7,6 +7,23 @@ This is a Python port of the [Android Market API Java Project](http://code.googl
 * [Python 2.5+](http://www.python.org)
 * [Protocol Buffers](http://code.google.com/p/protobuf/)
 
+## Install:
+Linux:
+
+1. aptitude install libprotobuf-dev
+2. wget protobuf-2.4.1.tar.bz2 http://protobuf.googlecode.com/files/protobuf-2.4.1.tar.bz2 && tar -jxf protobuf-2.4.1.tar.bz2
+1. cd protobuf-2.4.1/python/
+4. sudo python setup.py build
+5. If no errors in step 4: sudo python setup.py install
+
+Mac OS:
+
+1. Install homebrew: http://mxcl.github.com/homebrew/
+2. brew install protobuf
+3. curl -o protobuf-2.4.1.tar.bz2 http://protobuf.googlecode.com/files/protobuf-2.4.1.tar.bz2 && tar -jxf protobuf-2.4.1.tar.bz2
+4. sudo python setup.py build
+5. If no errors in step 4: sudo python setup.py install
+
 ## Usage
 
 Begin by starting a new session and entering your google credentials.
