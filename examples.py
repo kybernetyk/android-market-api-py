@@ -37,7 +37,7 @@ if __name__ == "__main__":
     pprint(results)
 
     # get top 10 sports games
-	results = session.getApps(category = 'SPORTS_GAMES', 
+    results = session.getApps(category = 'SPORTS_GAMES', 
 		orderType = market_proto.AppsRequest.POPULAR)
-	pprint(results)
+    pprint(results)
 
