@@ -162,9 +162,9 @@ class MarketSession(object):
     
     '''
     Gets all newest apps by default.
-		fixed this ... (jsz)
+	fixed this ... (jsz)
     @author Malinowski
-		@author jsz
+	@author Leon Szpilewski / jsz
     '''
     def getApps(self, startIndex = 0, entriesCount = 10, extendedInfo = True, orderType = market_proto.AppsRequest.NEWEST, category = None):
         appsreq = market_proto.AppsRequest()
